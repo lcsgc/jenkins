@@ -19,5 +19,4 @@ pipeline {
         sh "docker build -t ${IMAGE}"
       }
     }
-  }
 }

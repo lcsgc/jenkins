@@ -9,7 +9,7 @@ pipeline {
           sh 'docker info'
         }
       }
-    }
+
 
     stage('Build and Publish Image') {
       when {
@@ -19,4 +19,5 @@ pipeline {
         sh "docker build -t ${IMAGE}"
       }
     }
+  }
 }

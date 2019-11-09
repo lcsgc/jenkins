@@ -16,7 +16,7 @@ pipeline {
         branch 'master'
       }
       steps {
-        sh "docker build -t ${IMAGE}"
+        sh "docker build -t ${IMAGE} ."
       }
     }
   }

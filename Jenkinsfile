@@ -21,7 +21,7 @@ pipeline {
       }
       post {
         success {
-           sh "curl http://localhost:8089"
+           echo "${IMAGE}-container OK"
         }
       }
     }
